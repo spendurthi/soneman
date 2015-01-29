@@ -11,12 +11,12 @@
  <div id="errorDiv"></div> 		  
    <table>
     <tr>
-        <td><form:label path="orgname"><fmt:message key="orgname" /> :</form:label></td>
-        <td><form:input path="orgname" cssClass="required"/></td>
+        <td><form:label path="orgId"><fmt:message key="org_id" /> :</form:label></td>
+        <td><form:input path="orgId" cssClass="required"/></td>
     </tr>
     <tr>
-        <td><form:label path="password"><fmt:message key="password" /> :</form:label></td>
-        <td><form:input path="password" cssClass="required" /></td>
+        <td><form:label path="orgName"><fmt:message key="org_name" /> :</form:label></td>
+        <td><form:input path="orgName" cssClass="required" /></td>
     </tr>
     <tr>
     	<td></td>
