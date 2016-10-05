@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>
+
+<definition name="baseLayout1" template="/layout/layout1.jsp">
+	<put-attribute name="title" value="FreshMan" />
+	<put-attribute name="header1" value="/layout/header1.jsp" />
+	<put-attribute name="body" value="" />
+	<put-attribute name="footer" value="/layout/footer.jsp" />
+</definition>
+
+<definition name="baseLayout2" template="/layout/layout2.jsp">
+	<put-attribute name="title" value="FreshMan" />
+	<put-attribute name="header1" value="/layout/header1.jsp" />
+	<put-attribute name="header2" value="/layout/header2.jsp" />
+	<put-attribute name="header3" value="/layout/header3.jsp" />	
+	<put-attribute name="body" value="" />
+	<put-attribute name="footer" value="/layout/footer.jsp" />
+</definition>
+
+  
+<definition name="login" extends="baseLayout1">
+	<put-attribute name="title" value="FreshMan : Login" />
+	<put-attribute name="body" value="/jsp/login.jsp" />
+</definition>
+
+<definition name="mainDoor" extends="baseLayout2">
+	<put-attribute name="title" value="FreshMan : Welcome" />
+	<put-attribute name="body" value="/jsp/mainDoor.jsp" />
+</definition>
+
+<definition name="org" extends="baseLayout2">
+	<put-attribute name="title" value="FreshMan : ORG" />
+	<put-attribute name="body" value="/jsp/org.jsp" />
+</definition>
+
+<definition name="addressList" extends="baseLayout2">
+	<put-attribute name="body" value="/jsp/address/addressList.jsp" />
+</definition>
+
+<definition name="vAddressAdd" extends="baseLayout2">
+	<put-attribute name="body" value="/jsp/address/address.jsp" />
+</definition>
+
+<definition name="vAddressupde" extends="baseLayout2">
+	<put-attribute name="body" value="/jsp/address/viewAddress.jsp" />
+</definition>
+  
+</tiles-definitions>
